@@ -80,6 +80,9 @@ preencheArray(criaArray(10, 10));
 for (i = 0; i < arr.length; i++) {
   let linha = '';
   for (j = 0; j < arr[i].length; j++) {
+    if(arr[i][j] < 10){
+      arr[i][j] = '0'+ arr[i][j];
+    }
     linha = linha + ' '+arr[i][j]; 
   }
   console.log(linha);
